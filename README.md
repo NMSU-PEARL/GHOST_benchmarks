@@ -136,13 +136,18 @@ yosys -p "read_verilog <design>.v; synth -top <module>; dfflibmap -liberty sky13
 ```
 
 ## License
-MIT License
+The original work in this repository is released under the BSD 3-Clause License (see `LICENSE`).
+The AES-128, UART and SRAM base designs, and the files derived from them, remain under their upstream licenses (Apache 2.0, MIT and BSD 3-Clause). See `THIRD_PARTY_NOTICES.md` and the `LICENSES/` directory.
 
 ## Contributing
 
 Contributions to expand the benchmark set or improve documentation are welcome. Please submit a pull request or contact the maintainers for more information.
 
 ## Acknowledgments
+- Base IP cores:
+  - AES-128: tiny_aes by Homer Hsing: https://opencores.org/projects/tiny_aes
+  - UART: Ben Marshall: https://github.com/ben-marshall/uart
+  - SRAM: OpenRAM behavioral model: https://github.com/VLSIDA/OpenRAM
 - Google SkyWater PDK: https://github.com/google/skywater-pdk
 - Open-source EDA tools:
   - Yosys: https://yosyshq.net/yosys/
